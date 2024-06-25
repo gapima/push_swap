@@ -51,8 +51,7 @@ SRC = ft_isalpha.c \
 			ft_putchar_fd.c \
 			ft_putstr_fd.c \
 			ft_putendl_fd.c \
-			ft_putnbr_fd.c \
-			get_next_line.c
+			ft_putnbr_fd.c
 
 BONUS = ft_lstnew_bonus.c \
 			ft_lstadd_front_bonus.c \
