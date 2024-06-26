@@ -4,6 +4,7 @@
 
 # include "../libft/libft.h"
 # include <stdio.h>
+# include <limits.h>
 
  typedef struct s_stack_node
  {
@@ -30,6 +31,8 @@ t_stack_node 	*ft_stack_init_node(int content);
 
 void			ft_node_add_back(t_stack_node *node, t_stack *stack);
 void			ft_node_add_front(t_stack_node *node, t_stack *stack);
+
+int				ft_valid_args(char **args, t_stack *stack, int argc);
 
 
 #endif
