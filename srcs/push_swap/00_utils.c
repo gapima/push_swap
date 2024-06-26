@@ -63,34 +63,3 @@ t_stack_node	*ft_node_pop_back(t_stack *stack)
 	stack->size--;
 	return (node);
 }
-
-t_stack_node	*ft_get_node(t_stack *stack, int pos)
-{
-	int				i;
-	t_stack_node	*head;
-
-	i = 0;
-	head = stack->head;
-	
-	while (head)
-	{
-		if (i == pos)
-			return (head);
-		head = head->next;
-		i++;
-	}
-	return (NULL);
-}
-
-void	ft_stack_print(t_stack *stack)
-{
-	t_stack_node *head;
-
-	head = stack->head;
-	while (head)
-	{
-		printf("%d ", head->content);
-		head = head->next;
-	}
-	printf("\n");
-}
