@@ -1,4 +1,5 @@
 
+
 NAME = push_swap
 
 CC = cc
@@ -9,25 +10,25 @@ INC = ./includes
 LIBFT = ./libft
 
 HEADERS = -I $(INC)
-LIBS = ./libft/libft.a 
+LIBS = ./libft/libft.a
 
 FILES = srcs/push_swap/main.c srcs/push_swap/00_utils.c
 
+OBJS = $(FILES:%.c=%.o)
 
 all: $(NAME)
 
 %.o: %.c
 	@$(CC) $(CFLAGS) $(HEADERS)	-c $< -o $@
 
-$(NAME):
+$(NAME): $(OBJS)
 	@make -C $(LIBFT)
-	@$(CC)  $(FILES) $(HEADERS) -o $(NAME) $(LIBS)
+	@$(CC) $(OBJS) $(LIBS) $(HEADERS) -o $(NAME)
 	@echo "SUCCESS!!"
 
 clean:
-	@rm -rf 
+	@rm -rf $(OBJS)
 	@make clean -C libft
-	@rm -rf
 
 fclean: clean
 	@make fclean -C libft
