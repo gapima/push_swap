@@ -9,7 +9,7 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "/home/gapima/42cursus/push_swap/push_swap",
-			"args": [10, "a", 8],
+			"args": [1010],
 			"stopAtEntry": false,
 			"cwd": "/home/gapima/42cursus/push_swap/srcs",
 			"environment": [],

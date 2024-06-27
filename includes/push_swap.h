@@ -33,6 +33,10 @@ void			ft_node_add_back(t_stack_node *node, t_stack *stack);
 void			ft_node_add_front(t_stack_node *node, t_stack *stack);
 
 int				ft_valid_args(char **args, t_stack *stack, int argc);
+int				ft_valid_isdigit(int argc, int x, int y, char **args);
+int				ft_valid_notduplicate_string(t_stack *stack, char **args, int x, int y);
+int				ft_valid_notduplicate_notstring(t_stack *stack, char **args, int y);	
+int				ft_stack_isduplicate(t_stack_node *stack, int n);
 
 
 #endif
