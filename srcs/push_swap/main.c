@@ -26,8 +26,19 @@ int main(int argc, char **argv)
 		ft_free(&push.A);
 		return (1);
 	}
-	ft_sa(&push);
+	if (ft_valid_args(argv, &push.B, argc) == 1)
+	{
+		ft_free(&push.B);
+		return (1);
+	}
+	//ft_sa(&push);
+	//ft_sb(&push);
+	//ft_ss(&push);
+	//ft_pa(&push);
+	ft_pb(&push);
 	ft_stack_print(&push.A);
+	ft_stack_print(&push.B);
 	ft_free(&push.A);
+	ft_free(&push.B);
 	return (0);
 }
