@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 		ft_free(&push.A);
 		return (1);
 	}
-	ft_node_add_front(ft_stack_init_node(3), &push.A);
+	ft_sa(&push);
 	ft_stack_print(&push.A);
 	ft_free(&push.A);
 	return (0);

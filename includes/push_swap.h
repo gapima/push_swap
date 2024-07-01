@@ -32,6 +32,7 @@ t_stack_node 	*ft_stack_init_node(int content);
 void			ft_node_add_back(t_stack_node *node, t_stack *stack);
 void			ft_node_add_front(t_stack_node *node, t_stack *stack);
 void			ft_free(t_stack *stack);
+void			ft_sa(t_push_swap *list);
 
 int				ft_valid_args(char **args, t_stack *stack, int argc);
 int				ft_valid_notduplicate_string(t_stack *stack, char **args, int x, int y);
