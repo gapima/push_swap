@@ -12,7 +12,8 @@ LIBFT = ./libft
 HEADERS = -I $(INC)
 LIBS = ./libft/libft.a
 
-FILES = srcs/push_swap/main.c srcs/push_swap/00_utils.c srcs/push_swap/01_utils.c srcs/push_swap/02_utils.c
+FILES = srcs/push_swap/main.c srcs/push_swap/00_utils.c srcs/push_swap/01_utils.c srcs/push_swap/02_utils.c \
+		srcs/push_swap/03_utils.c
 
 OBJS = $(FILES:%.c=%.o)
 
