@@ -13,9 +13,7 @@ HEADERS = -I $(INC)
 LIBS = ./libft/libft.a
 
 FILES = srcs/push_swap/main.c srcs/push_swap/00_utils.c srcs/push_swap/01_utils.c srcs/push_swap/02_utils.c \
-		srcs/push_swap/03_utils.c srcs/push_swap/ft_sa.c srcs/push_swap/ft_sb.c srcs/push_swap/ft_ss.c \
-		srcs/push_swap/ft_pa.c srcs/push_swap/ft_pb.c srcs/push_swap/ft_ra.c srcs/push_swap/ft_rb.c \
-		srcs/push_swap/ft_rr.c srcs/push_swap/ft_rra.c srcs/push_swap/ft_rrb.c srcs/push_swap/ft_rrr.c
+		srcs/push_swap/03_utils.c srcs/push_swap/swap.c srcs/push_swap/push.c srcs/push_swap/rotate.c srcs/push_swap/reverse_rotate.c \
 
 OBJS = $(FILES:%.c=%.o)
 
