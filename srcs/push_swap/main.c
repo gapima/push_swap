@@ -35,7 +35,8 @@ int main(int argc, char **argv)
 	//ft_sb(&push);
 	//ft_ss(&push);
 	//ft_pa(&push);
-	ft_pb(&push);
+	ft_rrr(&push);
+	//ft_rrb(&push);
 	ft_stack_print(&push.A);
 	ft_stack_print(&push.B);
 	ft_free(&push.A);
