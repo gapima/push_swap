@@ -43,6 +43,7 @@ void			ft_rr(t_push_swap *list);
 void			ft_rra(t_push_swap *list);
 void			ft_rrb(t_push_swap *list);
 void			ft_rrr(t_push_swap *list);
+void			ft_insertion_sort(t_push_swap *push_swap); 
 
 int				ft_valid_args(char **args, t_stack *stack, int argc);
 int				ft_valid_notduplicate_string(t_stack *stack, char **args, int x, int y);
