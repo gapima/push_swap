@@ -8,7 +8,6 @@ void ft_insertion_sort(t_push_swap *push_swap) {
     // Mover todos os elementos de A para B
     while (A->size > 0) {
         ft_pb(push_swap);
-        printf("pb\n");
     }
 
     // Ordenar os elementos em B e movê-los de volta para A
@@ -38,17 +37,14 @@ void ft_insertion_sort(t_push_swap *push_swap) {
         if (position <= B->size / 2) {
             while (B->head != min_node) {
                 ft_rb(push_swap);
-                printf("rb\n");
             }
         } else {
             while (B->head != min_node) {
                 ft_rrb(push_swap);
-                printf("rrb\n");
             }
         }
 
         // Empurrar o menor elemento para A
         ft_pa(push_swap);
-        printf("pa\n");
     }
 }

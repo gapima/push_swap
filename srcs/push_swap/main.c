@@ -37,8 +37,10 @@ int main(int argc, char **argv)
 	//ft_pa(&push);
 	//ft_rrr(&push);
 	//ft_rrb(&push);
-	ft_insertion_sort(&push);
-	ft_stack_print(&push.A);
+	//ft_insertion_sort(&push);
+	//ft_quick_sort(&push, push.A.size, 'A');
+	//ft_stack_print(&push.A);
+	printf("%d",push.A.size);
 	//ft_stack_print(&push.B);
 	ft_free(&push.A);
 	ft_free(&push.B);
