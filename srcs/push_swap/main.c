@@ -6,24 +6,24 @@
 /*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 18:05:51 by glima             #+#    #+#             */
-/*   Updated: 2024/08/18 18:05:54 by glima            ###   ########.fr       */
+/*   Updated: 2024/08/18 18:08:36 by glima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <push_swap.h>
 
-static void ft_stack_print(t_stack *stack)
-{
-	t_stack_node *head;
+// static void ft_stack_print(t_stack *stack)
+// {
+// 	t_stack_node *head;
 
-	head = stack->head;
-	while (head)
-	{
-		printf("%d ", head->content);
-		head = head->next;
-	}
-	printf("\n");
-}
+// 	head = stack->head;
+// 	while (head)
+// 	{
+// 		printf("%d ", head->content);
+// 		head = head->next;
+// 	}
+// 	printf("\n");
+// }
 
 int main(int argc, char **argv)
 {
