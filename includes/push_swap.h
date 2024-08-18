@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/18 18:04:49 by glima             #+#    #+#             */
+/*   Updated: 2024/08/18 18:04:54 by glima            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
@@ -44,7 +55,8 @@ void			ft_rra(t_push_swap *list);
 void			ft_rrb(t_push_swap *list);
 void			ft_rrr(t_push_swap *list);
 void			ft_insertion_sort(t_push_swap *push_swap); 
-void			ft_quick_sort(t_push_swap *push_swap, int size, char stack);
+void 			ft_quick_sort(t_push_swap *ps, int start, int end);
+void 			ft_start_quick_sort(t_push_swap *ps);
 
 int				ft_valid_args(char **args, t_stack *stack, int argc);
 int				ft_valid_notduplicate_string(t_stack *stack, char **args, int x, int y);

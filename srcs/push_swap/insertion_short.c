@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   insertion_short.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/18 18:05:37 by glima             #+#    #+#             */
+/*   Updated: 2024/08/18 18:05:45 by glima            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <push_swap.h>
 
@@ -43,7 +54,6 @@ void ft_insertion_sort(t_push_swap *push_swap) {
                 ft_rrb(push_swap);
             }
         }
-
         // Empurrar o menor elemento para A
         ft_pa(push_swap);
     }

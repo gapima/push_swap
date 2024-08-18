@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   swap.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/18 18:06:09 by glima             #+#    #+#             */
+/*   Updated: 2024/08/18 18:06:14 by glima            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <push_swap.h>
 
 void	ft_sa(t_push_swap *list)
@@ -26,7 +38,7 @@ void	ft_sb(t_push_swap *list)
 	if (list->A.size < 2)
 		return ;
 	node1 = ft_node_pop_front(&list->B);
-	node2 = ft_node_pop_front(&list->B);
+	node2 = ft_node_pop_front(&list->B);menor
 	ft_node_add_front(node1, &list->B);
 	ft_node_add_front(node2, &list->B);
 	printf("sb\n");

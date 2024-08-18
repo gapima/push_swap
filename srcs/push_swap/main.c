@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/08/18 18:05:51 by glima             #+#    #+#             */
+/*   Updated: 2024/08/18 18:05:54 by glima            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include <push_swap.h>
 
@@ -26,21 +37,11 @@ int main(int argc, char **argv)
 		ft_free(&push.A);
 		return (1);
 	}
-	// if (ft_valid_args(argv, &push.B, argc) == 1)
-	// {
-	// 	ft_free(&push.B);
-	// 	return (1);
-	// }
-	//ft_sa(&push);
-	//ft_sb(&push);
-	//ft_ss(&push);
-	//ft_pa(&push);
-	//ft_rrr(&push);
-	//ft_rrb(&push);
-	//ft_insertion_sort(&push);
+
+	ft_insertion_sort(&push);
 	//ft_quick_sort(&push, push.A.size, 'A');
 	//ft_stack_print(&push.A);
-	printf("%d",push.A.size);
+	// ft_start_quick_sort(&push);
 	//ft_stack_print(&push.B);
 	ft_free(&push.A);
 	ft_free(&push.B);
