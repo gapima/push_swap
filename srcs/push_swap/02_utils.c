@@ -6,7 +6,7 @@
 /*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 18:05:11 by glima             #+#    #+#             */
-/*   Updated: 2024/08/18 18:05:12 by glima            ###   ########.fr       */
+/*   Updated: 2024/08/25 19:51:32 by glima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_stack_isduplicate(t_stack_node *stack, int n)
 {
 	while (stack)
 	{
-		if(stack->content == n)
+		if (stack->content == n)
 			return (1);
 		stack = stack->next;
 	}
@@ -33,6 +33,10 @@ int	ft_valid_notduplicate_string(t_stack *stack, char **args, int x, int y)
 				x++;
 			if (ft_stack_isduplicate(stack->head, ft_atoi(&args[y][x])) == 1)
 				return (1);
+			if (ft_atoi(&args[y][x]) > stack->max)
+				stack->max = ft_atoi(&args[y][x]);
+			if (ft_atoi(&args[y][x]) < stack->min)
+				stack->min = ft_atoi(&args[y][x]);
 			ft_node_add_back(ft_stack_init_node(ft_atoi(&args[y][x])), stack);
 			while (ft_isdigit(args[y][x]) == 2048 || args[y][x] == '-')
 				x++;
@@ -48,6 +52,10 @@ int	ft_valid_notduplicate_notstring(t_stack *stack, char **args, int y)
 	{
 		if (ft_stack_isduplicate(stack->head, ft_atoi(args[y])) == 1)
 			return (1);
+		if (ft_atoi(args[y]) > stack->max)
+				stack->max = ft_atoi(args[y]);
+		if (ft_atoi(args[y]) < stack->min)
+				stack->min = ft_atoi(args[y]);
 		ft_node_add_back(ft_stack_init_node(ft_atoi(args[y])), stack);
 		y++;
 	}
@@ -75,7 +83,7 @@ int	ft_valid_args(char **args, t_stack *stack, int argc)
 
 void	ft_free(t_stack *stack)
 {
-	t_stack_node *node;
+	t_stack_node	*node;
 
 	node = NULL;
 	while (stack->head)

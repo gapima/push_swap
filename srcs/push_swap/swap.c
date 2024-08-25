@@ -6,7 +6,7 @@
 /*   By: glima <glima@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/18 18:06:09 by glima             #+#    #+#             */
-/*   Updated: 2024/08/18 18:06:14 by glima            ###   ########.fr       */
+/*   Updated: 2024/08/25 16:59:04 by glima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,33 @@
 
 void	ft_sa(t_push_swap *list)
 {
-	t_stack_node *node1;
-	t_stack_node *node2;
+	t_stack_node	*node1;
+	t_stack_node	*node2;
 
 	node1 = NULL;
 	node2 = NULL;
-	if (list->A.size < 2)
+	if (list->a.size < 2)
 		return ;
-	node1 = ft_node_pop_front(&list->A);
-	node2 = ft_node_pop_front(&list->A);
-	ft_node_add_front(node1, &list->A);
-	ft_node_add_front(node2, &list->A);
+	node1 = ft_node_pop_front(&list->a);
+	node2 = ft_node_pop_front(&list->a);
+	ft_node_add_front(node1, &list->a);
+	ft_node_add_front(node2, &list->a);
 	printf("sa\n");
 }
 
 void	ft_sb(t_push_swap *list)
 {
-	t_stack_node *node1;
-	t_stack_node *node2;
+	t_stack_node	*node1;
+	t_stack_node	*node2;
 
 	node1 = NULL;
 	node2 = NULL;
-	if (list->A.size < 2)
+	if (list->a.size < 2)
 		return ;
-	node1 = ft_node_pop_front(&list->B);
-	node2 = ft_node_pop_front(&list->B);menor
-	ft_node_add_front(node1, &list->B);
-	ft_node_add_front(node2, &list->B);
+	node1 = ft_node_pop_front(&list->b);
+	node2 = ft_node_pop_front(&list->b);
+	ft_node_add_front(node1, &list->b);
+	ft_node_add_front(node2, &list->b);
 	printf("sb\n");
 }
 
